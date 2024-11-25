@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Administração de Perfil</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+
+
+
+
+    <div class="container my-5">
+        <h1 class="text-center mb-4">Administração de Perfil</h1>
+        <div class="row">
+            <!-- Menu Lateral -->
+            <div class="col-md-4">
+                <div class="list-group">
+                    <a href="#perfil" class="list-group-item list-group-item-action active" data-bs-toggle="tab">Meu Perfil</a>
+                    <a href="#produtos" class="list-group-item list-group-item-action" data-bs-toggle="tab">Meus Produtos</a>
+                    <a href="#configuracoes" class="list-group-item list-group-item-action" data-bs-toggle="tab">Configurações</a>
+                </div>
+            </div>
+
+            <!-- Conteúdo Principal -->
+            <div class="col-md-8">
+                <div class="tab-content">
+                    <!-- Aba Meu Perfil -->
+                    <div class="tab-pane fade show active" id="perfil">
+                        <h2>Meu Perfil</h2>
+                        <p><strong>Nome:</strong> João da Silva</p>
+                        <p><strong>Email:</strong> joao@email.com</p>
+                        <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#editarNomeModal">Editar Nome</button>
+                        <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#editarEmailModal">Editar Email</button>
+
+                    </div>
+
+                    <!-- Aba Meus Produtos -->
+                    <div class="tab-pane fade" id="produtos">
+                        <h2>Meus Produtos Anunciados</h2>
+                        <ul class="list-group">
+                            <li class="list-group-item">
+                                Produto 1 - R$ 50,00
+                                <button class="btn btn-danger btn-sm float-end">Remover</button>
+                            </li>
+                            <li class="list-group-item">
+                                Produto 2 - R$ 120,00
+                                <button class="btn btn-danger btn-sm float-end">Remover</button>
+                            </li>
+                            <li class="list-group-item">
+                                Produto 3 - R$ 30,00
+                                <button class="btn btn-danger btn-sm float-end">Remover</button>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- Aba Configurações -->
+                    <div class="tab-pane fade" id="configuracoes">
+                        <h2>Configurações</h2>
+                        <p>Em breve...</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal para editar nome -->
+    <div class="modal fade" id="editarNomeModal" tabindex="-1" aria-labelledby="editarNomeModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="editarNomeModalLabel">Editar Nome</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="mb-3">
+                            <label for="novoNome" class="form-label">Novo Nome</label>
+                            <input type="text" class="form-control" id="novoNome" placeholder="Digite seu novo nome">
+                        </div>
+                        <button type="submit" class="btn btn-primary">Salvar Alterações</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="modal fade" id="editarEmailModal" tabindex="-1" aria-labelledby="editarEmailModal" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="editarEmailModal">Editar Nome</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="mb-3">
+                            <label for="novoEmail" class="form-label">Novo Email</label>
+                            <input type="text" class="form-control" id="novoEmail" placeholder="Digite seu novo Email">
+                        </div>
+                        <button type="submit" class="btn btn-primary">Salvar Alterações</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

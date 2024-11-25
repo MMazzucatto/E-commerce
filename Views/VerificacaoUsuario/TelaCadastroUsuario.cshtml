@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de Usuário</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+
+
+<style>
+
+
+.formulario {
+    background: #ffffff;
+    padding: 20px 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+    margin-top: 3rem !important;
+    margin-bottom: 3rem !important;
+
+}
+
+h1 {
+    margin-bottom: 20px;
+    color: #333333;
+}
+
+.form-group {
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+label {
+    font-size: 14px;
+    font-weight: bold;
+    color: #333333;
+    display: block;
+    margin-bottom: 5px;
+}
+
+
+
+
+    </style>
+
+
+
+
+<body>
+    <div class="formulario container">
+        <h1>Cadastro de Usuário</h1>
+        <form id="user-form">
+            <div class="form-group">
+                <label for="name">Nome Completo</label>
+                <input type="text" class="form-control" placeholder="Digite seu nome" aria-describedby="basic-addon1">
+            </div>
+            <div class="form-group">
+                <label for="email">E-mail</label>
+                <input type="text" class="form-control" placeholder="Digite seu email" aria-describedby="basic-addon1">
+            </div>
+            <div class="form-group">
+                <label for="password">Senha</label>
+                <input type="text" class="form-control" placeholder="Digite seu senha" aria-describedby="basic-addon1">
+            </div>
+            <div class="form-group">
+                <label for="confirm-password">Confirme sua Senha</label>
+                <input type="text" class="form-control" placeholder="Confirme sua senha" aria-describedby="basic-addon1">
+            </div>
+            <button class="btn btn-primary" type="button">Cadastrar</button>
+        </form>
+    
+      
+    </div>
+</body>
+</html>
