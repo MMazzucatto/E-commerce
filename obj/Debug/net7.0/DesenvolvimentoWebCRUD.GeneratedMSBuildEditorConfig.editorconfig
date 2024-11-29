@@ -9,61 +9,65 @@ build_property.EnforceExtendedAnalyzerRules =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = DesenvolvimentoWebCRUD
 build_property.RootNamespace = DesenvolvimentoWebCRUD
-build_property.ProjectDir = C:\Users\mmazzucatto\Desktop\ProjetoFaculdadeCRUD\DesenvolvimentoWebCRUD\
+build_property.ProjectDir = c:\Users\muril\OneDrive\Área de Trabalho\Trabalhos faculdade\Projeto e-commerce\
+build_property.EnableComHosting = 
+build_property.EnableGeneratedComInterfaceComImportInterop = 
 build_property.RazorLangVersion = 7.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = C:\Users\mmazzucatto\Desktop\ProjetoFaculdadeCRUD\DesenvolvimentoWebCRUD
+build_property.MSBuildProjectDirectory = c:\Users\muril\OneDrive\Área de Trabalho\Trabalhos faculdade\Projeto e-commerce
 build_property._RazorSourceGeneratorDebug = 
+build_property.EffectiveAnalysisLevelStyle = 7.0
+build_property.EnableCodeStyleSeverity = 
 
-[C:/Users/mmazzucatto/Desktop/ProjetoFaculdadeCRUD/DesenvolvimentoWebCRUD/Views/Home/AlterarProduto.cshtml]
+[c:/Users/muril/OneDrive/Área de Trabalho/Trabalhos faculdade/Projeto e-commerce/Views/Home/AlterarProduto.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxBbHRlcmFyUHJvZHV0by5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/mmazzucatto/Desktop/ProjetoFaculdadeCRUD/DesenvolvimentoWebCRUD/Views/Home/CatalogoProdutos.cshtml]
+[c:/Users/muril/OneDrive/Área de Trabalho/Trabalhos faculdade/Projeto e-commerce/Views/Home/CatalogoProdutos.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxDYXRhbG9nb1Byb2R1dG9zLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/mmazzucatto/Desktop/ProjetoFaculdadeCRUD/DesenvolvimentoWebCRUD/Views/Home/Home.cshtml]
+[c:/Users/muril/OneDrive/Área de Trabalho/Trabalhos faculdade/Projeto e-commerce/Views/Home/Home.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxIb21lLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/mmazzucatto/Desktop/ProjetoFaculdadeCRUD/DesenvolvimentoWebCRUD/Views/Home/IncluirProduto.cshtml]
+[c:/Users/muril/OneDrive/Área de Trabalho/Trabalhos faculdade/Projeto e-commerce/Views/Home/IncluirProduto.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmNsdWlyUHJvZHV0by5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/mmazzucatto/Desktop/ProjetoFaculdadeCRUD/DesenvolvimentoWebCRUD/Views/Shared/Error.cshtml]
+[c:/Users/muril/OneDrive/Área de Trabalho/Trabalhos faculdade/Projeto e-commerce/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/mmazzucatto/Desktop/ProjetoFaculdadeCRUD/DesenvolvimentoWebCRUD/Views/Shared/_ValidationScriptsPartial.cshtml]
+[c:/Users/muril/OneDrive/Área de Trabalho/Trabalhos faculdade/Projeto e-commerce/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/mmazzucatto/Desktop/ProjetoFaculdadeCRUD/DesenvolvimentoWebCRUD/Views/VerificacaoUsuario/AdministrarPerfil.cshtml]
+[c:/Users/muril/OneDrive/Área de Trabalho/Trabalhos faculdade/Projeto e-commerce/Views/VerificacaoUsuario/AdministrarPerfil.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVmVyaWZpY2FjYW9Vc3VhcmlvXEFkbWluaXN0cmFyUGVyZmlsLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/mmazzucatto/Desktop/ProjetoFaculdadeCRUD/DesenvolvimentoWebCRUD/Views/VerificacaoUsuario/TelaCadastroUsuario.cshtml]
+[c:/Users/muril/OneDrive/Área de Trabalho/Trabalhos faculdade/Projeto e-commerce/Views/VerificacaoUsuario/TelaCadastroUsuario.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVmVyaWZpY2FjYW9Vc3VhcmlvXFRlbGFDYWRhc3Ryb1VzdWFyaW8uY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/mmazzucatto/Desktop/ProjetoFaculdadeCRUD/DesenvolvimentoWebCRUD/Views/VerificacaoUsuario/TelaEsqueceuSenha.cshtml]
+[c:/Users/muril/OneDrive/Área de Trabalho/Trabalhos faculdade/Projeto e-commerce/Views/VerificacaoUsuario/TelaEsqueceuSenha.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVmVyaWZpY2FjYW9Vc3VhcmlvXFRlbGFFc3F1ZWNldVNlbmhhLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/mmazzucatto/Desktop/ProjetoFaculdadeCRUD/DesenvolvimentoWebCRUD/Views/VerificacaoUsuario/TelaLogin.cshtml]
+[c:/Users/muril/OneDrive/Área de Trabalho/Trabalhos faculdade/Projeto e-commerce/Views/VerificacaoUsuario/TelaLogin.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVmVyaWZpY2FjYW9Vc3VhcmlvXFRlbGFMb2dpbi5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/mmazzucatto/Desktop/ProjetoFaculdadeCRUD/DesenvolvimentoWebCRUD/Views/_ViewImports.cshtml]
+[c:/Users/muril/OneDrive/Área de Trabalho/Trabalhos faculdade/Projeto e-commerce/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/mmazzucatto/Desktop/ProjetoFaculdadeCRUD/DesenvolvimentoWebCRUD/Views/_ViewStart.cshtml]
+[c:/Users/muril/OneDrive/Área de Trabalho/Trabalhos faculdade/Projeto e-commerce/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/mmazzucatto/Desktop/ProjetoFaculdadeCRUD/DesenvolvimentoWebCRUD/Views/Shared/_Layout.cshtml]
+[c:/Users/muril/OneDrive/Área de Trabalho/Trabalhos faculdade/Projeto e-commerce/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-myypetjt8s

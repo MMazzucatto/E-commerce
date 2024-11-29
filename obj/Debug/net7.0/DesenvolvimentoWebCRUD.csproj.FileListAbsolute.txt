@@ -28,3 +28,36 @@ C:\Users\mmazzucatto\Desktop\ProjetoFaculdadeCRUD\DesenvolvimentoWebCRUD\obj\Deb
 C:\Users\mmazzucatto\Desktop\ProjetoFaculdadeCRUD\DesenvolvimentoWebCRUD\obj\Debug\net7.0\DesenvolvimentoWebCRUD.pdb
 C:\Users\mmazzucatto\Desktop\ProjetoFaculdadeCRUD\DesenvolvimentoWebCRUD\obj\Debug\net7.0\DesenvolvimentoWebCRUD.genruntimeconfig.cache
 C:\Users\mmazzucatto\Desktop\ProjetoFaculdadeCRUD\DesenvolvimentoWebCRUD\obj\Debug\net7.0\ref\DesenvolvimentoWebCRUD.dll
+c:\Users\muril\OneDrive\Área de Trabalho\Trabalhos faculdade\Projeto e-commerce\bin\Debug\net7.0\appsettings.Development.json
+c:\Users\muril\OneDrive\Área de Trabalho\Trabalhos faculdade\Projeto e-commerce\bin\Debug\net7.0\appsettings.json
+c:\Users\muril\OneDrive\Área de Trabalho\Trabalhos faculdade\Projeto e-commerce\bin\Debug\net7.0\DesenvolvimentoWebCRUD.staticwebassets.runtime.json
+c:\Users\muril\OneDrive\Área de Trabalho\Trabalhos faculdade\Projeto e-commerce\bin\Debug\net7.0\DesenvolvimentoWebCRUD.staticwebassets.endpoints.json
+c:\Users\muril\OneDrive\Área de Trabalho\Trabalhos faculdade\Projeto e-commerce\bin\Debug\net7.0\DesenvolvimentoWebCRUD.exe
+c:\Users\muril\OneDrive\Área de Trabalho\Trabalhos faculdade\Projeto e-commerce\bin\Debug\net7.0\DesenvolvimentoWebCRUD.deps.json
+c:\Users\muril\OneDrive\Área de Trabalho\Trabalhos faculdade\Projeto e-commerce\bin\Debug\net7.0\DesenvolvimentoWebCRUD.runtimeconfig.json
+c:\Users\muril\OneDrive\Área de Trabalho\Trabalhos faculdade\Projeto e-commerce\bin\Debug\net7.0\DesenvolvimentoWebCRUD.dll
+c:\Users\muril\OneDrive\Área de Trabalho\Trabalhos faculdade\Projeto e-commerce\bin\Debug\net7.0\DesenvolvimentoWebCRUD.pdb
+c:\Users\muril\OneDrive\Área de Trabalho\Trabalhos faculdade\Projeto e-commerce\obj\Debug\net7.0\DesenvolvimentoWebCRUD.GeneratedMSBuildEditorConfig.editorconfig
+c:\Users\muril\OneDrive\Área de Trabalho\Trabalhos faculdade\Projeto e-commerce\obj\Debug\net7.0\DesenvolvimentoWebCRUD.AssemblyInfoInputs.cache
+c:\Users\muril\OneDrive\Área de Trabalho\Trabalhos faculdade\Projeto e-commerce\obj\Debug\net7.0\DesenvolvimentoWebCRUD.AssemblyInfo.cs
+c:\Users\muril\OneDrive\Área de Trabalho\Trabalhos faculdade\Projeto e-commerce\obj\Debug\net7.0\DesenvolvimentoWebCRUD.csproj.CoreCompileInputs.cache
+c:\Users\muril\OneDrive\Área de Trabalho\Trabalhos faculdade\Projeto e-commerce\obj\Debug\net7.0\DesenvolvimentoWebCRUD.MvcApplicationPartsAssemblyInfo.cache
+c:\Users\muril\OneDrive\Área de Trabalho\Trabalhos faculdade\Projeto e-commerce\obj\Debug\net7.0\DesenvolvimentoWebCRUD.RazorAssemblyInfo.cache
+c:\Users\muril\OneDrive\Área de Trabalho\Trabalhos faculdade\Projeto e-commerce\obj\Debug\net7.0\DesenvolvimentoWebCRUD.RazorAssemblyInfo.cs
+c:\Users\muril\OneDrive\Área de Trabalho\Trabalhos faculdade\Projeto e-commerce\obj\Debug\net7.0\scopedcss\Views\Shared\_Layout.cshtml.rz.scp.css
+c:\Users\muril\OneDrive\Área de Trabalho\Trabalhos faculdade\Projeto e-commerce\obj\Debug\net7.0\scopedcss\bundle\DesenvolvimentoWebCRUD.styles.css
+c:\Users\muril\OneDrive\Área de Trabalho\Trabalhos faculdade\Projeto e-commerce\obj\Debug\net7.0\scopedcss\projectbundle\DesenvolvimentoWebCRUD.bundle.scp.css
+c:\Users\muril\OneDrive\Área de Trabalho\Trabalhos faculdade\Projeto e-commerce\obj\Debug\net7.0\staticwebassets.build.json
+c:\Users\muril\OneDrive\Área de Trabalho\Trabalhos faculdade\Projeto e-commerce\obj\Debug\net7.0\staticwebassets.development.json
+c:\Users\muril\OneDrive\Área de Trabalho\Trabalhos faculdade\Projeto e-commerce\obj\Debug\net7.0\staticwebassets.build.endpoints.json
+c:\Users\muril\OneDrive\Área de Trabalho\Trabalhos faculdade\Projeto e-commerce\obj\Debug\net7.0\staticwebassets\msbuild.DesenvolvimentoWebCRUD.Microsoft.AspNetCore.StaticWebAssets.props
+c:\Users\muril\OneDrive\Área de Trabalho\Trabalhos faculdade\Projeto e-commerce\obj\Debug\net7.0\staticwebassets\msbuild.DesenvolvimentoWebCRUD.Microsoft.AspNetCore.StaticWebAssetEndpoints.props
+c:\Users\muril\OneDrive\Área de Trabalho\Trabalhos faculdade\Projeto e-commerce\obj\Debug\net7.0\staticwebassets\msbuild.build.DesenvolvimentoWebCRUD.props
+c:\Users\muril\OneDrive\Área de Trabalho\Trabalhos faculdade\Projeto e-commerce\obj\Debug\net7.0\staticwebassets\msbuild.buildMultiTargeting.DesenvolvimentoWebCRUD.props
+c:\Users\muril\OneDrive\Área de Trabalho\Trabalhos faculdade\Projeto e-commerce\obj\Debug\net7.0\staticwebassets\msbuild.buildTransitive.DesenvolvimentoWebCRUD.props
+c:\Users\muril\OneDrive\Área de Trabalho\Trabalhos faculdade\Projeto e-commerce\obj\Debug\net7.0\staticwebassets.pack.json
+c:\Users\muril\OneDrive\Área de Trabalho\Trabalhos faculdade\Projeto e-commerce\obj\Debug\net7.0\DesenvolvimentoWebCRUD.dll
+c:\Users\muril\OneDrive\Área de Trabalho\Trabalhos faculdade\Projeto e-commerce\obj\Debug\net7.0\refint\DesenvolvimentoWebCRUD.dll
+c:\Users\muril\OneDrive\Área de Trabalho\Trabalhos faculdade\Projeto e-commerce\obj\Debug\net7.0\DesenvolvimentoWebCRUD.pdb
+c:\Users\muril\OneDrive\Área de Trabalho\Trabalhos faculdade\Projeto e-commerce\obj\Debug\net7.0\DesenvolvimentoWebCRUD.genruntimeconfig.cache
+c:\Users\muril\OneDrive\Área de Trabalho\Trabalhos faculdade\Projeto e-commerce\obj\Debug\net7.0\ref\DesenvolvimentoWebCRUD.dll

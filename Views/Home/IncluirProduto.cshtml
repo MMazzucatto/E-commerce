@@ -8,11 +8,49 @@
 </head>
 <body>
 
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
 
+
+
+<script>
+
+        function AdicionarProduto() {
+
+
+         var url = $("#anunciar").attr("data-url");
+
+         var titulo = $("#titulo").val();
+         var descricao = $("#descricao").val();
+         var valor = $("#valor").val();
+
+
+         var retorno = function (json) {
+             if (json.sucesso) {
+
+                 swal({
+                     title: "Produto Anunciado com sucesso",
+                     icon: "success"
+                 })
+                     .then((value) => {
+
+
+                         location.reload()
+
+                     })
+             }
+             else {
+                 swal("Algo deu errado", json.sucesso, "warning");
+             }
+         };
+         $.post(url, { titulo: titulo, descricao: descricao, valor: valor}, retorno, 'json');
+        }
+
+    
+    </script>
 
     <div class="container my-5">
         <h1 class="text-center mb-4">Anunciar Produto</h1>
-        <form>
             <!-- Título do Produto -->
             <div class="mb-3">
                 <label for="titulo" class="form-label">Título do Produto</label>
@@ -39,10 +77,10 @@
 
             <!-- Botões -->
             <div class="text-center">
-                <button type="submit" class="btn btn-primary">Salvar Produto</button>
+
+                <button id="anunciar" class="btn btn-primary" onclick="AdicionarProduto()">Anunciar</button>
                 <button type="reset" class="btn btn-secondary">Limpar</button>
             </div>
-        </form>
     </div>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>

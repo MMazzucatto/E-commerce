@@ -1,32 +1,30 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\mmazzucatto\\Desktop\\ProjetoFaculdadeCRUD\\DesenvolvimentoWebCRUD\\DesenvolvimentoWebCRUD.csproj": {}
+    "C:\\Users\\muril\\OneDrive\\Área de Trabalho\\Trabalhos faculdade\\Projeto e-commerce\\DesenvolvimentoWebCRUD.csproj": {}
   },
   "projects": {
-    "C:\\Users\\mmazzucatto\\Desktop\\ProjetoFaculdadeCRUD\\DesenvolvimentoWebCRUD\\DesenvolvimentoWebCRUD.csproj": {
+    "C:\\Users\\muril\\OneDrive\\Área de Trabalho\\Trabalhos faculdade\\Projeto e-commerce\\DesenvolvimentoWebCRUD.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\mmazzucatto\\Desktop\\ProjetoFaculdadeCRUD\\DesenvolvimentoWebCRUD\\DesenvolvimentoWebCRUD.csproj",
+        "projectUniqueName": "C:\\Users\\muril\\OneDrive\\Área de Trabalho\\Trabalhos faculdade\\Projeto e-commerce\\DesenvolvimentoWebCRUD.csproj",
         "projectName": "DesenvolvimentoWebCRUD",
-        "projectPath": "C:\\Users\\mmazzucatto\\Desktop\\ProjetoFaculdadeCRUD\\DesenvolvimentoWebCRUD\\DesenvolvimentoWebCRUD.csproj",
-        "packagesPath": "C:\\Users\\mmazzucatto\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\mmazzucatto\\Desktop\\ProjetoFaculdadeCRUD\\DesenvolvimentoWebCRUD\\obj\\",
+        "projectPath": "C:\\Users\\muril\\OneDrive\\Área de Trabalho\\Trabalhos faculdade\\Projeto e-commerce\\DesenvolvimentoWebCRUD.csproj",
+        "packagesPath": "C:\\Users\\muril\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\muril\\OneDrive\\Área de Trabalho\\Trabalhos faculdade\\Projeto e-commerce\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\mmazzucatto\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "C:\\Users\\muril\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
-          "net7.0"
+          "net9.0"
         ],
         "sources": {
-          "https://api.nuget.org/v3/index.json": {},
-          "https://packagesource": {}
+          "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
-          "net7.0": {
-            "targetAlias": "net7.0",
+          "net9.0": {
+            "targetAlias": "net9.0",
             "projectReferences": {}
           }
         },
@@ -34,11 +32,27 @@
           "warnAsError": [
             "NU1605"
           ]
-        }
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "all"
+        },
+        "SdkAnalysisLevel": "9.0.100"
       },
       "frameworks": {
-        "net7.0": {
-          "targetAlias": "net7.0",
+        "net9.0": {
+          "targetAlias": "net9.0",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[9.0.0, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[9.0.0, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
@@ -58,7 +72,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.401\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.100/PortableRuntimeIdentifierGraph.json"
         }
       }
     }
