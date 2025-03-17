@@ -1,3 +1,6 @@
+@using Microsoft.AspNetCore.Http
+@inject IHttpContextAccessor HttpContextAccessor
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -10,16 +13,16 @@
 
 
 
-
     <div class="container my-5">
         <h1 class="text-center mb-4">Administração de Perfil</h1>
         <div class="row">
-            <!-- Menu Lateral -->
             <div class="col-md-4">
                 <div class="list-group">
                     <a href="#perfil" class="list-group-item list-group-item-action active" data-bs-toggle="tab">Meu Perfil</a>
                     <a href="#produtos" class="list-group-item list-group-item-action" data-bs-toggle="tab">Meus Produtos</a>
                     <a href="#configuracoes" class="list-group-item list-group-item-action" data-bs-toggle="tab">Configurações</a>
+                    <a class="list-group-item list-group-item-action" data-bs-toggle="tab">Sair!</a>
+
                 </div>
             </div>
 

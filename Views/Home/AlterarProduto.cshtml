@@ -1,7 +1,5 @@
 @using ProjetoEcommerce.Models
-
 @model IEnumerable<Produto>
-
 
 <!DOCTYPE html>
 <html lang="en">
@@ -15,13 +13,10 @@
 
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
-
-
-
 <script>
 
-
 function EditarProduto(idProduto) {
+
 
 
          var url = $("#SalvarMudanca").attr("data-url");
@@ -48,15 +43,15 @@ function EditarProduto(idProduto) {
              }
              else {
                  swal("Algo deu errado", json.sucesso, "warning");
-             }
-         };
+                }
+        };
          $.post(url, { TituloEditado: TituloEditado, DescricaoEditada: DescricaoEditada, ValorEditado: ValorEditado, idProduto: idProduto }, retorno, 'json');
 
          }
+
 </script>
+
 <body>
-
-
 
     <div class="container my-5">
         <h1 class="text-center mb-4">Editar Produto</h1>
@@ -64,42 +59,35 @@ function EditarProduto(idProduto) {
 
     @foreach(var item in Model){
        
-            <!-- Título do Produto -->
             <div class="mb-3">
                 <label for="titulo" class="form-label">Nome produto</label>
                 <input type="text" class="form-control" id="TituloEditado" name="titulo" value="@item.Nome" required>
             </div>
 
-            <!-- Descrição do Produto -->
             <div class="mb-3">
                 <label for="descricao" class="form-label">Descrição</label>
                 <textarea class="form-control" id="DescricaoEditada" name="descricao" rows="3" placeholder="Digite uma descrição detalhada do produto" required>@item.Descricao</textarea>
             </div>
 
-            <!-- Valor do Produto -->
             <div class="mb-3">
                 <label for="valor" class="form-label">Preco</label>
                 <input type="text" class="form-control" id="ValorEditado" name="valor" value="@item.Preco" min="0" step="0.01" required>
             </div>
 
-            <!-- Imagem do Produto -->
             <div class="mb-3">
                 <label for="imagem" class="form-label">Imagem do Produto</label>
                 <input type="file" class="form-control" id="imagem" name="imagem" accept="image/*">
             </div>
 
-            <!-- Botões -->
             <div class="text-center">
                 <button type="submit" id="SalvarMudanca"class="btn btn-primary" data-url="@Url.Action("AlterarProduto")" onclick="EditarProduto(@item.id_produto)">Salvar Mudanças</button>
                 <button type="reset" class="btn btn-secondary">Limpar</button>
             </div>
 
             <input hidden id="idProduto" value="@item.id_produto">
+        }
 
-         }
     </div>
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
 
 
 

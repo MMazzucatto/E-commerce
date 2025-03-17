@@ -46,9 +46,66 @@ label {
 
 
 
-    </style>
+</style>
 
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+<script>
 
+    function CadastroUsuario(){
+
+            let url = '@Url.Action("IncluirUsuario")';
+
+            let nome = $("#nome").val();
+            let email = $("#email").val();
+            let senha = $("#senha").val();
+            let confirmacao = $("#confirmacao").val();
+
+            if (nome == "" || email == "" || senha == "" || confirmacao == "") {
+                swal({
+                     title: "Preecha todos os campos",
+                     icon: "warning"
+                 })
+                return;
+            }
+
+            if (senha != confirmacao) {
+               swal({
+                     title: "Senhas não conferem",
+                     icon: "warning"
+                 })
+                 return;
+            }
+
+      var retorno = function (json) {
+
+        if (json.sucesso) {
+                swal({
+                    title: "Cadastro feito com sucesso!",
+                    text: 'Usuário cadastrado no sistema com sucesso',
+                    icon: "success"
+                })
+                .then((value) => {
+                    window.location.replace("Home","Home");
+                });
+
+                }else {
+                swal({
+                    title: "Usuário Existente",
+                    text: 'O Usuário já possui Cadastro no sistema',
+                    icon: "error"
+                }).then((value) => {
+                    window.location.replace("@Url.Action("Home", "Home")");
+                });
+            }
+
+        };
+
+        $.post(url, { nome:nome, email: email, senha: senha }, retorno, 'json');
+
+    }
+
+</script>
 
 
 <body>
@@ -57,21 +114,21 @@ label {
         <form id="user-form">
             <div class="form-group">
                 <label for="name">Nome Completo</label>
-                <input type="text" class="form-control" placeholder="Digite seu nome" aria-describedby="basic-addon1">
+                <input type="text" class="form-control" id="nome" placeholder="Digite seu nome" aria-describedby="basic-addon1">
             </div>
             <div class="form-group">
                 <label for="email">E-mail</label>
-                <input type="text" class="form-control" placeholder="Digite seu email" aria-describedby="basic-addon1">
+                <input type="text" class="form-control" id="email" placeholder="Digite seu email" aria-describedby="basic-addon1">
             </div>
             <div class="form-group">
                 <label for="password">Senha</label>
-                <input type="text" class="form-control" placeholder="Digite seu senha" aria-describedby="basic-addon1">
+                <input type="text" class="form-control" id="senha" placeholder="Digite seu senha" aria-describedby="basic-addon1">
             </div>
             <div class="form-group">
                 <label for="confirm-password">Confirme sua Senha</label>
-                <input type="text" class="form-control" placeholder="Confirme sua senha" aria-describedby="basic-addon1">
+                <input type="text" class="form-control" id="confirmacao" placeholder="Confirme sua senha" aria-describedby="basic-addon1">
             </div>
-            <button class="btn btn-primary" type="button">Cadastrar</button>
+            <button class="btn btn-primary" type="button" onclick="CadastroUsuario()">Cadastrar</button>
         </form>
     
       

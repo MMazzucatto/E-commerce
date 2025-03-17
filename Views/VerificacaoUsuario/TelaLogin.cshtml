@@ -8,6 +8,8 @@
 </head>
 
 
+
+
 <style>
 
 
@@ -52,21 +54,85 @@ label {
 
 
 
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+<script>
+
+
+
+    function VerificacaoUsuario(){
+
+        var url = '@Url.Action("TelaLogin")';
+
+        var email = $("#email").val();
+        var senha = $("#senha").val();
+
+            if (email == "" || senha == "") {
+                swal({
+                    title: "Preencha todos os campos",
+                    icon: "warning"
+                })
+                return
+            }
+
+
+         var retorno = function (json) {
+
+
+
+            if (json.inexistente){
+                swal({
+                     title: "Usuário não existe no sistema",
+                     icon: "warning"
+                 })
+                return
+            }
+
+            if (json.existente) {
+
+                 swal({
+                     title: "Login efetuado com sucesso",
+                     icon: "success"
+                })
+             
+
+                .then((value) => {
+
+
+                    window.location.replace("@Url.Action("Home", "Home")");
+
+                    let BotaoPerfil = $("#BotaoLogin").replaceWith("Administrar Perfil");
+
+                    
+  
+                })
+            }
+
+      
+        };
+
+        $.post(url, { email: email, senha: senha }, retorno, 'json');
+
+    }
+
+    
+</script>
+
 <body>
    <div class="formulario container">
         <h1>Login Usuário</h1>
         <form id="user-form">
             <div class="form-group">
                 <label for="email">E-mail</label>
-                <input type="text" class="form-control" placeholder="Digite seu email" aria-describedby="basic-addon1">
+                <input id="email" type="text" class="form-control" placeholder="Digite seu email" aria-describedby="basic-addon1">
             </div>
             <div class="form-group">
                 <label for="password">Senha</label>
-                <input type="text" class="form-control" placeholder="Digite seu senha" aria-describedby="basic-addon1">
+                <input id="senha" type="text" class="form-control" placeholder="Digite seu senha" aria-describedby="basic-addon1">
             </div>
-            <button class="btn btn-primary" type="button">Cadastrar</button>
-        </form>
+            <button class="btn btn-primary" type="button" onclick="VerificacaoUsuario()">Login</button>
 
+        </form>
         <div class="links">
             <p><a  class="link-opacity-100" href="@Url.Action("TelaEsqueceuSenha", "VerificacaoUsuario")">Esqueceu a senha?</a></p>
             <p><a class="link-opacity-100"  href="@Url.Action("TelaCadastroUsuario", "VerificacaoUsuario")">Não possui acesso, cadastre-se!</a></p>

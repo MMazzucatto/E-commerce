@@ -40,10 +40,24 @@ button.accept-policy[b-myypetjt8s] {
   line-height: inherit;
 }
 
-.footer[b-myypetjt8s] {
-  position: absolute;
+html[b-myypetjt8s], body[b-myypetjt8s] {
+  height: 100%;
+}
+
+body[b-myypetjt8s] {
+  display: flex;
+  flex-direction: column;
+}
+
+.container[b-myypetjt8s] {
+  flex: 1;
+}
+
+footer[b-myypetjt8s] {
+  background-color: #f8f9fa;
+  text-align: center;
+  padding: 1rem 0;
+  position: relative;
   bottom: 0;
   width: 100%;
-  white-space: nowrap;
-  line-height: 60px;
 }

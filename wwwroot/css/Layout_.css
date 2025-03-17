@@ -1,0 +1,60 @@
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+.container {
+    flex: 1;
+}
+
+footer {
+    background-color: #f8f9fa;
+    text-align: center;
+    padding: 1rem 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+ul {
+    list-style: none;
+    padding-bottom: 0px;
+    margin: 0;
+    margin-bottom: 0rem !important;
+}
+
+li {
+    list-style: none;
+}
+
+.cabecalho {
+    padding: 10px 0;
+}
+
+.opcoes {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 10px;
+}
+
+.barra-navegacao {
+    background-color: #228B22;
+}
+
+.pesquisa {
+    padding-left: 2em;
+    padding-right: 2em;
+    height: 38px !important;
+}
+
+footer{
+    background-color: #228B22;
+    color: white;
+    padding: 1rem 0;
+}
+

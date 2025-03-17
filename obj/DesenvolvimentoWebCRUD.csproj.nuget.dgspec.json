@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\muril\\OneDrive\\Área de Trabalho\\Trabalhos faculdade\\Projeto e-commerce\\DesenvolvimentoWebCRUD.csproj": {}
+    "C:\\Users\\muril\\OneDrive\\Área de Trabalho\\Portifólio GIT\\E-commerce\\DesenvolvimentoWebCRUD.csproj": {}
   },
   "projects": {
-    "C:\\Users\\muril\\OneDrive\\Área de Trabalho\\Trabalhos faculdade\\Projeto e-commerce\\DesenvolvimentoWebCRUD.csproj": {
+    "C:\\Users\\muril\\OneDrive\\Área de Trabalho\\Portifólio GIT\\E-commerce\\DesenvolvimentoWebCRUD.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\muril\\OneDrive\\Área de Trabalho\\Trabalhos faculdade\\Projeto e-commerce\\DesenvolvimentoWebCRUD.csproj",
+        "projectUniqueName": "C:\\Users\\muril\\OneDrive\\Área de Trabalho\\Portifólio GIT\\E-commerce\\DesenvolvimentoWebCRUD.csproj",
         "projectName": "DesenvolvimentoWebCRUD",
-        "projectPath": "C:\\Users\\muril\\OneDrive\\Área de Trabalho\\Trabalhos faculdade\\Projeto e-commerce\\DesenvolvimentoWebCRUD.csproj",
+        "projectPath": "C:\\Users\\muril\\OneDrive\\Área de Trabalho\\Portifólio GIT\\E-commerce\\DesenvolvimentoWebCRUD.csproj",
         "packagesPath": "C:\\Users\\muril\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\muril\\OneDrive\\Área de Trabalho\\Trabalhos faculdade\\Projeto e-commerce\\obj\\",
+        "outputPath": "C:\\Users\\muril\\OneDrive\\Área de Trabalho\\Portifólio GIT\\E-commerce\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\muril\\AppData\\Roaming\\NuGet\\NuGet.Config"

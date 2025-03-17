@@ -1,59 +1,94 @@
-﻿<!DOCTYPE html>
+﻿@using Microsoft.AspNetCore.Http
+@inject IHttpContextAccessor HttpContextAccessor
+
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>@ViewData["Title"] - DesenvolvimentoWebCRUD</title>
+    <title>@ViewData["Title"]E-commerce</title>
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
     <link rel="stylesheet" href="~/DesenvolvimentoWebCRUD.styles.css" asp-append-version="true" />
+    <link href="@Url.Content("~/css/Layout_.css")" rel="stylesheet">
 </head>
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+<script>
+
+    function AdministrarUsuario() {
+
+        var nomeUsuario = HttpContextAccessor.HttpContext.Session.GetString("NomeUsuario");
+        var idUsuario = HttpContextAccessor.HttpContext.Session.GetInt32("idUsuario");
+        var url = '@Url.Action("AdministrarPerfil", "VerificacaoUsuario")';
+
+        $.post(url, { nomeUsuario: nomeUsuario, idUsuario: idUsuario}, retorno, 'json');
+
+    }
+
+</script>
 
 <body>
     <header>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <div class="container">
-            <a class="navbar-brand" href="@Url.Action("Home", "Home")" >Mini E-commerce</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item">
-                        <a type="button" href="@Url.Action("Home", "Home")" class="btn btn-light">Home</a>
+    <nav class="navbar-expand-lg barra-navegacao">
+        <div class="container cabecalho">
+        <div style="display: flex;">
+            <a class="navbar-brand" style="padding-right: 2em; padding: 10px;" href="@Url.Action("Home", "Home")"> E-commerce</a>
+
+            <div class="input-group pesquisa">
+                <input type="text" class="form-control " placeholder="Pesquise algum produto..." aria-describedby="button-addon2">
+                <button class="btn btn-light" type="button" id="button-addon2">Pesquisar</button>
+            </div>
+        </div>
+               <ul class="opcoes">
+                    <li class="">
+                        <a type="button" href="@Url.Action("Home", "Home")" class="botoes" style="color: black;">Home</a>
                     </li>
-                    <li class="nav-item">
-                        <a type="button" href="@Url.Action("CatalogoProdutos", "Home")" class="btn btn-light">Produtos</a>
+                    <li class="">
+                        <a type="button" href="@Url.Action("CatalogoProdutos", "Home")" class="btn">Produtos</a>
                     </li>
-                    <li class="nav-item">
-                        <a type="button" class="btn btn-light">Carrinho</a>
+                    <li class="">
+                        <a type="button" class="btn">Carrinho</a>
                     </li>
-                    <li class="nav-item">
-                        <a type="button" href="@Url.Action("TelaLogin", "VerificacaoUsuario")" class="btn btn-light">Fazer Login</a>
-                    </li>
-                    <li class="nav-item">
-                        <a type="button" href="@Url.Action("AdicionarProduto", "Home")" class="btn btn-primary">Anunciar Produto</a>
-                    </li>
-                    
+                    @{
+                        var nomeUsuario = HttpContextAccessor.HttpContext.Session.GetString("NomeUsuario");
+                        var idUsuario = HttpContextAccessor.HttpContext.Session.GetInt32("idUsuario");
+
+                        if (!string.IsNullOrEmpty(nomeUsuario))
+                        {
+                            <li class="nav-item">
+                                <a type="button" href="@Url.Action("AdministrarPerfil", "VerificacaoUsuario")" id="BotaoLogin" onclick="AdministrarUsuario()" class="btn">Olá, @nomeUsuario</a>
+                            </li>
+                            if (nomeUsuario == "Administrador"){   
+                                <li class="nav-item">
+                                    <a type="button" href="@Url.Action("AdicionarProduto", "Home")" class="btn">Anunciar Produto</a>
+                                </li>
+                            }
+                        }
+                        else
+                        {
+                            <li class="nav-item">
+                                <a type="button" href="@Url.Action("TelaLogin", "VerificacaoUsuario")" id="BotaoLogin" class="btn">Fazer Login</a>
+                            </li>
+                        }
+                    }
                 </ul>
             </div>
         </div>
     </nav>
     </header>
-    <div class="container">
+    <div style="flex: 1; background-color: #FFD700	;">
         <main role="main" class="pb-3">
             @RenderBody()
         </main>
     </div>
 
-    <footer class="bg-light text-center py-3">
-        <p>&copy; 2024 Mini E-commerce. Todos os direitos reservados.</p>
+    <footer class="text-center py-3">
+        <p>&copy; 2024 E-commerce. Todos os direitos reservados.</p>
         <a href="#" class="text-decoration-none">Termos de Uso</a> | 
         <a href="#" class="text-decoration-none">Política de Privacidade</a>
     </footer>
-    <script src="~/lib/jquery/dist/jquery.min.js"></script>
-    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="~/js/site.js" asp-append-version="true"></script>
-    @await RenderSectionAsync("Scripts", required: false)
+
 </body>
 </html>

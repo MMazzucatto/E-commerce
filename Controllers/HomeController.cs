@@ -58,14 +58,21 @@ public class HomeController : Controller
 
         public IActionResult AdicionarProduto(){          
         
+
+        int? idUsuario = HttpContext.Session.GetInt32("idUsuario");
+
+        ViewBag.idUsuario = idUsuario;
+
+
+
         return View("IncluirProduto");
         }
         [HttpPost]
-            public JsonResult AdicionarProduto(string titulo, string descricao, string valor)
+            public JsonResult AdicionarProduto(string titulo, string descricao, string valor, int idUsuario)
             {
                 try
                 {
-                    ProdutoAdicionar(titulo, descricao, valor);
+                    ProdutoAdicionar(titulo, descricao, valor, idUsuario);
 
                     return Json(new { sucesso = true, mensagem = "ok" });
 
@@ -73,7 +80,7 @@ public class HomeController : Controller
                 catch (Exception ex)
                 {
 
-                    return Json(new { Resultado = false, mensagem = ex.Message });
+                    return Json(new { sucesso = false, mensagem = ex.Message });
                 }
 
             }
@@ -98,11 +105,11 @@ public class HomeController : Controller
 
     #region conexaoBanco
 
-    private IEnumerable<Produto> ExibirProdutos()
+private IEnumerable<Produto> ExibirProdutos()
 
     
 {
-    var _connectionString = "Server=DESKTOP-OB6NSEL;Database=E-commerce;Trusted_Connection=True;Encrypt=False;";  // Ajuste a string conforme necessário
+    var _connectionString = "Server=DESKTOP-OB6NSEL;Database=E-commerce;Trusted_Connection=True;Encrypt=False;";  
     var items = new List<Produto>();  
     
     try
@@ -112,7 +119,7 @@ public class HomeController : Controller
             connection.Open();  
             using (var comm = connection.CreateCommand())
             {
-                comm.CommandText = "SELECT * FROM Produto"; // Evite usar "Select *"
+                comm.CommandText = "SELECT * FROM Produto"; 
             
                 using (var reader = comm.ExecuteReader())
                 {
@@ -193,7 +200,7 @@ public class HomeController : Controller
     }
 }
 
-   private void ProdutoAdicionar(string titulo, string descricao, string valor)
+   private void ProdutoAdicionar(string titulo, string descricao, string valor, int idUsuario)
 {
     var _connectionString = "Server=DESKTOP-OB6NSEL;Database=E-commerce;Trusted_Connection=True;Encrypt=False;";
     
@@ -209,7 +216,6 @@ public class HomeController : Controller
                 {
                     using (var command = connection.CreateCommand())
                     {
-                        var idUsuario = 1;
                         command.Transaction = transaction;
                         command.CommandText = @"
                             insert into Produto (nome, preco, id_usuario, Descricao)
@@ -225,12 +231,10 @@ public class HomeController : Controller
                         command.ExecuteNonQuery();
                     }
 
-                    // Confirmar transação
                     transaction.Commit();
                 }
                 catch (Exception ex)
                 {
-                    // Reverter em caso de erro
                     transaction.Rollback();
                     Console.WriteLine("Erro ao editar o produto: " + ex.Message);
                     throw;
@@ -291,9 +295,8 @@ public class HomeController : Controller
         throw;
     }
 }
+#endregion
 
-
-    #endregion
 
 
     [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
